@@ -1829,6 +1829,7 @@ async fn run(
                         agent.config.screenshot_dir(),
                         agent.config.logs_dir(),
                         snapshot_store,
+                        Some(api_state.live_worker_transcripts.clone()),
                     );
                     let channel_registration_id = agent
                         .deps
@@ -2036,6 +2037,7 @@ async fn run(
                         agent.config.screenshot_dir(),
                         agent.config.logs_dir(),
                         snapshot_store,
+                        Some(api_state.live_worker_transcripts.clone()),
                     );
                     let channel_registration_id = agent
                         .deps
